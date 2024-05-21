@@ -6,17 +6,8 @@ export const CALCULATE_FOOTPRINT_MUTATION = gql`
     value
   }
 
-  mutation {
-    calculate(
-      input: {
-        electricityUsageKWh: 100
-        transportationUsageGallonsPerMonth: 50
-        flightsShortHaul: 2
-        flightsMediumHaul: 1
-        flightsLongHaul: 0
-        dietaryChoice: Vegan
-      }
-    ) {
+  mutation CALCULATE_FOOTPRINT_MUTATION($input: CalculateInput!) {
+    calculate(input: $input) {
       footprint {
         electricityEmissions {
           ...EmissionFragment
@@ -38,11 +29,11 @@ export const CALCULATE_FOOTPRINT_MUTATION = gql`
           ...EmissionFragment
         }
 
-        dietaryEmissions {
+        dietaryChoiceEmissions {
           ...EmissionFragment
         }
 
-        totalEmissions {
+        totalYearlyEmissions {
           ...EmissionFragment
         }
       }

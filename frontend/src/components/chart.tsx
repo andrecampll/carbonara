@@ -3,15 +3,12 @@
 import { Card, CardContent, Typography } from '@mui/material'
 import { PieChart } from '@mui/x-charts'
 
-export function Chart() {
-  const data = [
-    { id: 0, value: 10, label: 'Electricity' },
-    { id: 1, value: 15, label: 'Transportation' },
-    { id: 2, value: 20, label: 'Air Travel' },
-    { id: 3, value: 40, label: 'Dietary Choice' },
-  ]
+import { useFootprint } from '@/hooks/use-footprint'
 
-  return (
+export function Chart() {
+  const { footprintChartData } = useFootprint()
+
+  return footprintChartData.length > 0 ? (
     <Card>
       <CardContent>
         <Typography variant="h5">Your carbon footprint</Typography>
@@ -20,7 +17,7 @@ export function Chart() {
           <PieChart
             series={[
               {
-                data,
+                data: footprintChartData,
                 highlightScope: { faded: 'global', highlighted: 'item' },
                 faded: {
                   innerRadius: 30,
@@ -35,6 +32,19 @@ export function Chart() {
           />
         </div>
       </CardContent>
+
+      <CardContent>
+        <ul className="mt-4">
+          {footprintChartData.map((data) => (
+            <li key={data.id} className="flex justify-between">
+              <Typography fontWeight="600">{data.label}</Typography>
+              <Typography>
+                {data.value.toFixed(2)} <strong>{data.unit || 'kg'}</strong>
+              </Typography>
+            </li>
+          ))}
+        </ul>
+      </CardContent>
     </Card>
-  )
+  ) : null
 }

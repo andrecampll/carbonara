@@ -4,8 +4,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import { Header } from '@/components/header'
-import { ApolloWrapper } from '@/lib/apollo-wrapper'
 import { FootprintProvider } from '@/hooks/use-footprint'
+import { ApolloWrapper } from '@/lib/apollo-wrapper'
 
 const inter = Inter({
   subsets: ['latin'],
