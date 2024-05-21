@@ -24,17 +24,18 @@ input CalculateInput {
   dietaryChoice: DietaryChoiceEnum
 }
 
+type Footprint {
+  electricityEmissions: Emission
+  transportationEmissions: Emission
+  airTravelEmissionsShortHaul: Emission
+  airTravelEmissionsMediumHaul: Emission
+  airTravelEmissionsLongHaul: Emission
+  dietaryEmissions: Emission
+  totalEmissions: Emission
+}
+
 type CalculateOutput {
-  electricityEmissions: Emission,
-  transportationEmissions: Emission,
-  airTravelEmissionsShortHaul: Emission,
-  airTravelEmissionsMediumHaul: Emission,
-  airTravelEmissionsLongHaul: Emission,
-  totalAirTravelEmissions: Emission,
-  yearlyElectricityEmissions: Emission,
-  yearlyTransportationEmissions: Emission,
-  dietaryChoiceEmissions: Emission,
-  totalYearlyEmissions: Emission,
+  footprint: Footprint
 }
 
 type Emission {

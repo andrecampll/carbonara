@@ -94,42 +94,47 @@ export const footprintResolver = {
 
         // Prepare response object with units included
         const result = {
-          electricityEmissions: { value: electricityEmissions, unit: 'kgCO2e' },
-          transportationEmissions: {
-            value: transportationEmissions,
-            unit: 'kgCO2e',
-          },
-          airTravelEmissionsShortHaul: {
-            value: airTravelEmissionsShortHaul,
-            unit: 'kgCO2e/year',
-          },
-          airTravelEmissionsMediumHaul: {
-            value: airTravelEmissionsMediumHaul,
-            unit: 'kgCO2e/year',
-          },
-          airTravelEmissionsLongHaul: {
-            value: airTravelEmissionsLongHaul,
-            unit: 'kgCO2e/year',
-          },
-          totalAirTravelEmissions: {
-            value: totalAirTravelEmissions,
-            unit: 'kgCO2e/year',
-          },
-          yearlyElectricityEmissions: {
-            value: yearlyElectricityEmissions,
-            unit: 'kgCO2e/year',
-          },
-          yearlyTransportationEmissions: {
-            value: yearlyTransportationEmissions,
-            unit: 'kgCO2e/year',
-          },
-          dietaryChoiceEmissions: {
-            value: dietaryChoiceEmissions,
-            unit: 'kgCO2e/year',
-          },
-          totalYearlyEmissions: {
-            value: totalYearlyEmissions,
-            unit: 'kgCO2e/year',
+          footprint: {
+            electricityEmissions: {
+              value: electricityEmissions,
+              unit: 'kgCO2e',
+            },
+            transportationEmissions: {
+              value: transportationEmissions,
+              unit: 'kgCO2e',
+            },
+            airTravelEmissionsShortHaul: {
+              value: airTravelEmissionsShortHaul,
+              unit: 'kgCO2e/year',
+            },
+            airTravelEmissionsMediumHaul: {
+              value: airTravelEmissionsMediumHaul,
+              unit: 'kgCO2e/year',
+            },
+            airTravelEmissionsLongHaul: {
+              value: airTravelEmissionsLongHaul,
+              unit: 'kgCO2e/year',
+            },
+            totalAirTravelEmissions: {
+              value: totalAirTravelEmissions,
+              unit: 'kgCO2e/year',
+            },
+            yearlyElectricityEmissions: {
+              value: yearlyElectricityEmissions,
+              unit: 'kgCO2e/year',
+            },
+            yearlyTransportationEmissions: {
+              value: yearlyTransportationEmissions,
+              unit: 'kgCO2e/year',
+            },
+            dietaryChoiceEmissions: {
+              value: dietaryChoiceEmissions,
+              unit: 'kgCO2e/year',
+            },
+            totalYearlyEmissions: {
+              value: totalYearlyEmissions,
+              unit: 'kgCO2e/year',
+            },
           },
         }
 
