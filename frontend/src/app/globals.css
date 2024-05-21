@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+.rti--container {
+  border-radius: 0.2rem !important;
+  --rti-bg: transparent !important;
+  --rti-border: #e5e7eb !important;
+  --rti-main: #DE2C62 !important;
+  --rti-radius: 0.6rem !important;
+  --rti-s: "0.5rem"; /* spacing */
+  --rti-tag: #DE2C62 !important;
+  --rti-tag-remove: "#e53e3e";
+}
+
+.rti--tag {
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.2rem !importnant;
+}
