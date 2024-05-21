@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 
 import { Header } from '@/components/header'
 import { ApolloWrapper } from '@/lib/apollo-wrapper'
+import { FootprintProvider } from '@/hooks/use-footprint'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,12 +29,14 @@ export default function RootLayout({
     <html className={inter.variable} lang="en">
       <body className={`${inter.className} bg-background antialiased`}>
         <ApolloWrapper>
-          <Header />
+          <FootprintProvider>
+            <Header />
 
-          <main className="mb-8 min-h-[84vh] px-4 md:px-12">
-            <div className="m-auto max-w-5xl">{children}</div>
-          </main>
-          {/* <Footer /> */}
+            <main className="mb-8 min-h-[84vh] px-4 md:px-12">
+              <div className="m-auto max-w-5xl">{children}</div>
+            </main>
+            {/* <Footer /> */}
+          </FootprintProvider>
         </ApolloWrapper>
       </body>
     </html>

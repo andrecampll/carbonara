@@ -7,7 +7,9 @@ import { useCallback } from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
+import { Footprint } from '@/data/types/footprint'
 import { CALCULATE_FOOTPRINT_MUTATION } from '@/graphql/mutations/calculateFootprint'
+import { useFootprint } from '@/hooks/use-footprint'
 
 import { Button } from './ui/button'
 import { Input } from './ui/input'
@@ -35,38 +37,47 @@ const footprintFormSchema = z.object({
 
 type FootprintFormData = z.infer<typeof footprintFormSchema>
 
+type CalculateFootprintMutationResponse = {
+  calculate: {
+    footprint: Footprint
+  }
+}
+
 export function Form() {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm<FootprintFormData>({
     resolver: zodResolver(footprintFormSchema),
   })
 
-  const [calculateFunction, { data, loading }] = useMutation(
-    CALCULATE_FOOTPRINT_MUTATION,
-  )
+  const { addFootprint } = useFootprint()
+
+  const [calculateFunction, { loading }] =
+    useMutation<CalculateFootprintMutationResponse>(
+      CALCULATE_FOOTPRINT_MUTATION,
+    )
 
   const handleCalculateFootprint = useCallback(
-    (data: FootprintFormData) => {
+    async (formData: FootprintFormData) => {
       // handle submit
-      console.log('submit', data)
-
-      calculateFunction({
+      const { data: footPrintData } = await calculateFunction({
         variables: {
           input: {
-            electricityUsageKWh: Number(data.electricty),
-            transportationUsageGallonsPerMonth: Number(data.transportation),
-            flightsShortHaul: Number(data.shortFlights),
-            flightsMediumHaul: Number(data.mediumFlights),
-            flightsLongHaul: Number(data.longFlights),
-            dietaryChoice: data.dietaryChoice,
+            electricityUsageKWh: Number(formData.electricty),
+            transportationUsageGallonsPerMonth: Number(formData.transportation),
+            flightsShortHaul: Number(formData.shortFlights),
+            flightsMediumHaul: Number(formData.mediumFlights),
+            flightsLongHaul: Number(formData.longFlights),
+            dietaryChoice: formData.dietaryChoice,
           },
         },
       })
+
+      addFootprint(footPrintData?.calculate.footprint as Footprint)
     },
-    [calculateFunction],
+    [calculateFunction, addFootprint],
   )
 
   return (
@@ -114,10 +125,8 @@ export function Form() {
           />
 
           <Button className="mt-4" type="submit">
-            {isSubmitting ? 'Loading...' : 'Calculate'}
+            {loading ? 'Loading...' : 'Calculate'}
           </Button>
-
-          {loading ? <p>Loading...</p> : <p>{data?.footprint}</p>}
         </form>
       </CardContent>
     </Card>
