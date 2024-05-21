@@ -30,8 +30,11 @@ type Footprint {
   airTravelEmissionsShortHaul: Emission
   airTravelEmissionsMediumHaul: Emission
   airTravelEmissionsLongHaul: Emission
-  dietaryEmissions: Emission
-  totalEmissions: Emission
+  totalAirTravelEmissions: Emission
+  yearlyElectricityEmissions: Emission
+  yearlyTransportationEmissions: Emission
+  dietaryChoiceEmissions: Emission
+  totalYearlyEmissions: Emission
 }
 
 type CalculateOutput {
