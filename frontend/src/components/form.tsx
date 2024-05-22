@@ -2,7 +2,8 @@
 
 import { useMutation } from '@apollo/client'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Card, CardContent, Typography } from '@mui/material'
+import { Card, CardContent, Stack, Typography } from '@mui/material'
+import Button from '@mui/material/Button'
 import { useCallback } from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
@@ -11,8 +12,8 @@ import { Footprint } from '@/data/types/footprint'
 import { CALCULATE_FOOTPRINT_MUTATION } from '@/graphql/mutations/calculateFootprint'
 import { useFootprint } from '@/hooks/use-footprint'
 
-import { Button } from './ui/button'
 import { Input } from './ui/input'
+import { SearchInput } from './ui/search-input'
 
 const footprintFormSchema = z.object({
   electricty: z.string().min(1, {
@@ -48,6 +49,7 @@ export function Form() {
     register,
     handleSubmit,
     formState: { errors },
+    setValue,
   } = useForm<FootprintFormData>({
     resolver: zodResolver(footprintFormSchema),
   })
@@ -88,44 +90,58 @@ export function Form() {
           onSubmit={handleSubmit(handleCalculateFootprint)}
           className="mt-4 flex w-full flex-col gap-2"
         >
-          <Input
-            label="Electricity Usage (Kwh/Month):"
-            type="number"
-            error={errors.electricty?.message}
-            {...register('electricty')}
-          />
-          <Input
-            label="Transportation Gasoline Usage (Gallons/Month):"
-            type="number"
-            error={errors.transportation?.message}
-            {...register('transportation')}
-          />
-          <Input
-            label="Short Flights (4 hours):"
-            type="number"
-            error={errors.shortFlights?.message}
-            {...register('shortFlights')}
-          />
-          <Input
-            label="Medium Flights (6 hours):"
-            type="number"
-            error={errors.mediumFlights?.message}
-            {...register('mediumFlights')}
-          />
-          <Input
-            label="Long Flights (8 hours):"
-            type="number"
-            error={errors.longFlights?.message}
-            {...register('longFlights')}
-          />
-          <Input
-            label="Dietary Choice:"
-            error={errors.dietaryChoice?.message}
-            {...register('dietaryChoice')}
-          />
+          <Stack spacing={2}>
+            <Input
+              label="Electricity Usage (Kwh/Month):"
+              type="number"
+              helperText={errors.electricty?.message}
+              color="secondary"
+              {...register('electricty')}
+            />
+            <Input
+              label="Transportation Gasoline Usage (Gallons/Month):"
+              type="number"
+              helperText={errors.transportation?.message}
+              color="secondary"
+              {...register('transportation')}
+            />
+            <Input
+              label="Short Flights (4 hours):"
+              type="number"
+              helperText={errors.shortFlights?.message}
+              color="secondary"
+              {...register('shortFlights')}
+            />
+            <Input
+              label="Medium Flights (6 hours):"
+              type="number"
+              helperText={errors.mediumFlights?.message}
+              color="secondary"
+              {...register('mediumFlights')}
+            />
+            <Input
+              label="Long Flights (8 hours):"
+              type="number"
+              helperText={errors.longFlights?.message}
+              color="secondary"
+              {...register('longFlights')}
+            />
+            <SearchInput
+              label="Dietary Choice:"
+              helperText={errors.dietaryChoice?.message}
+              color="secondary"
+              onChangeValue={(value) => setValue('dietaryChoice', value)}
+              {...register('dietaryChoice')}
+            />
+          </Stack>
 
-          <Button className="mt-4" type="submit">
-            {loading ? 'Loading...' : 'Calculate'}
+          <Button
+            variant="contained"
+            color="secondary"
+            className="mt-4"
+            type="submit"
+          >
+            <strong>{loading ? 'Loading...' : 'Calculate'}</strong>
           </Button>
         </form>
       </CardContent>
