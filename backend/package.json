@@ -8,7 +8,7 @@
     "compile": "tsc",
     "lint": "eslint src --ext .ts --fix",
     "start:dev": "tsx watch src/app.ts",
-    "start": "node ./dist/app.js",
+    "start": "node ./dist/app.cjs",
     "build": "tsup src --out-dir ./dist"
   },
   "keywords": [],
