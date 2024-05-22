@@ -57,7 +57,7 @@ export function Step4({ onFinalSubmit }: Props) {
       await onFinalSubmit({
         electricityUsageKWh: Number(wizard?.electrictyUsage),
         transportationUsageGallonsPerMonth: Number(wizard?.transportationUsage),
-        flightsShortHaul: Number(wizard?.longFlights),
+        flightsShortHaul: Number(wizard?.shortFlights),
         flightsMediumHaul: Number(wizard?.mediumFlights),
         flightsLongHaul: Number(wizard?.longFlights),
         dietaryChoice,

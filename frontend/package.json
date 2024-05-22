@@ -16,6 +16,7 @@
     "@hookform/resolvers": "^3.4.0",
     "@mui/material": "^5.15.18",
     "@mui/x-charts": "^7.5.0",
+    "@t3-oss/env-nextjs": "^0.10.1",
     "framer-motion": "^11.2.5",
     "graphql": "^16.8.1",
     "next": "14.2.3",
