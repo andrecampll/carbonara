@@ -6,8 +6,9 @@ import express from 'express'
 import { DocumentNode } from 'graphql'
 import http from 'http'
 
-import { appResolvers } from './resolvers/appResolver.js'
-import { appTypeDefs } from './typeDefs/appTypeDef.js'
+import { env } from '@/env'
+import { appResolvers } from '@/resolvers/appResolver'
+import { appTypeDefs } from '@/typeDefs/appTypeDef'
 
 const app = express()
 const httpServer = http.createServer(app)
@@ -31,7 +32,7 @@ async function startApolloServer(
   app.use(
     '/graphql',
     cors({
-      origin: 'https://carbonara-jet.vercel.app',
+      origin: env.APP_FRONTEND_ENDPOINT,
     }),
     express.json(),
     expressMiddleware(server),
@@ -40,7 +41,7 @@ async function startApolloServer(
   await new Promise<void>((resolve) =>
     httpServer.listen({ port: 3333 }, resolve),
   )
-  console.log(`🚀 Server ready at http://localhost:3333/graphql`)
+  console.log(`🚀 Server ready at port 3333!`)
 }
 
 startApolloServer(appTypeDefs, appResolvers)
