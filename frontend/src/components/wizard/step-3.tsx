@@ -75,21 +75,18 @@ export function Step3() {
             label="Short Flights (4 hours):"
             type="number"
             helperText={errors.shortFlights?.message}
-            color="secondary"
             {...register('shortFlights')}
           />
           <Input
             label="Medium Flights (6 hours):"
             type="number"
             helperText={errors.mediumFlights?.message}
-            color="secondary"
             {...register('mediumFlights')}
           />
           <Input
             label="Long Flights (8 hours):"
             type="number"
             helperText={errors.longFlights?.message}
-            color="secondary"
             {...register('longFlights')}
           />
 

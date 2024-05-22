@@ -70,7 +70,6 @@ export function Step1() {
             label="Electricity Usage (Kwh/Month):"
             type="number"
             helperText={errors.electrictyUsage?.message}
-            color="secondary"
             {...register('electrictyUsage')}
           />
 

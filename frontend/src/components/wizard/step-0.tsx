@@ -5,7 +5,7 @@ import { useWizard } from 'react-use-wizard'
 import { Step } from './step'
 
 export function Step0() {
-  const { previousStep, nextStep } = useWizard()
+  const { nextStep } = useWizard()
 
   return (
     <Step>
@@ -29,10 +29,7 @@ export function Step0() {
           />
         </div>
 
-        <footer className="flex w-full items-center justify-between">
-          <Button onClick={previousStep} color="secondary" type="submit">
-            Cancel
-          </Button>
+        <footer className="flex w-full items-center justify-end">
           <Button
             onClick={nextStep}
             variant="contained"

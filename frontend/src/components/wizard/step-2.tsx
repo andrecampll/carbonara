@@ -64,7 +64,6 @@ export function Step2() {
             label="Transportation Gasoline Usage (Gallons/Month):"
             type="number"
             helperText={errors.transportationUsage?.message}
-            color="secondary"
             {...register('transportationUsage')}
           />
 

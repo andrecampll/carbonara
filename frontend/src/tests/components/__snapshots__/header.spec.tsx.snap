@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header > it should be able to render Header component 1`] = `
+<header
+  class="bg-gradient-to-r from-primary-500 to-secondary-500 p-4 md:px-12"
+>
+  <div
+    class="m-auto flex max-w-5xl items-center justify-between"
+  >
+    <a
+      href="/"
+    >
+      <div
+        class="flex items-center gap-2"
+      >
+        <span
+          class="text-xl font-bold text-white"
+        >
+          Carbonara
+        </span>
+      </div>
+    </a>
+    <div
+      class="flex items-center gap-4"
+    >
+      <p
+        class="text-white"
+      >
+        John Doe
+      </p>
+      <div
+        class="rounded-full bg-white p-1"
+      >
+        <span
+          class="font-bold text-black"
+        >
+          JD
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+`;

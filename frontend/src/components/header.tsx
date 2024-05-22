@@ -1,4 +1,3 @@
-// import Image from 'next/image'
 import Link from 'next/link'
 
 export function Header() {
@@ -7,7 +6,6 @@ export function Header() {
       <div className="m-auto flex max-w-5xl items-center justify-between">
         <Link href="/">
           <div className="flex items-center gap-2">
-            {/* <Image alt="logo" width={30} height={30} src="/logo.png" /> */}
             <span className="text-xl font-bold text-white">Carbonara</span>
           </div>
         </Link>
