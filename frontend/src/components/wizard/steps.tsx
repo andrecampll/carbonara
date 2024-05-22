@@ -1,6 +1,7 @@
 'use client'
 
 import { useMutation } from '@apollo/client'
+import { AnimatePresence } from 'framer-motion'
 import { useCallback } from 'react'
 import { Wizard } from 'react-use-wizard'
 
@@ -44,7 +45,7 @@ export function Steps() {
   )
 
   return (
-    <Wizard>
+    <Wizard wrapper={<AnimatePresence initial={false} mode="wait" />}>
       <Step0 />
       <Step1 />
       <Step2 />

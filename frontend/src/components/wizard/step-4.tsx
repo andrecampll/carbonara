@@ -13,6 +13,7 @@ import {
   FootprintWizard,
   useFootprintWizard,
 } from './hooks/use-footprint-wizard'
+import { Step } from './step'
 
 const footprintStep4Schema = z.object({
   dietaryChoice: z.string().min(1, {
@@ -46,7 +47,6 @@ export function Step4({ onFinalSubmit }: Props) {
 
   const onSubmit = useCallback(
     async (formData: FootprintWizardFormStep4Data) => {
-      console.log('formData', formData)
       const dietaryChoice =
         formData.dietaryChoice as FootprintWizard['dietaryChoice']
 
@@ -69,39 +69,40 @@ export function Step4({ onFinalSubmit }: Props) {
   )
 
   return (
-    <div className="flex flex-col gap-4">
-      <header>
-        <Typography variant="h5">Dietary Choice</Typography>
-        <Typography fontWeight={400}>
-          Select your dietary choice to calculate your carbon footprint.
-        </Typography>
-      </header>
+    <Step>
+      <div className="flex flex-col gap-4">
+        <header>
+          <Typography variant="h5">Dietary Choice</Typography>
+          <Typography fontWeight={400}>
+            Select your dietary choice to calculate your carbon footprint.
+          </Typography>
+        </header>
 
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="my-4 flex flex-col items-center gap-4"
-      >
-        <Image alt="" width={300} height={300} src="/images/meat.png" />
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="my-4 flex flex-col items-center gap-4"
+        >
+          <Image alt="" width={300} height={300} src="/images/meat.png" />
 
-        <SearchInput
-          label="Dietary Choice:"
-          helperText={errors.dietaryChoice?.message}
-          {...register('dietaryChoice')}
-          onChangeValue={(value) => {
-            console.log('valueeee', value)
-            setValue('dietaryChoice', value)
-          }}
-        />
+          <SearchInput
+            label="Dietary Choice:"
+            helperText={errors.dietaryChoice?.message}
+            {...register('dietaryChoice')}
+            onChangeValue={(value) => {
+              setValue('dietaryChoice', value)
+            }}
+          />
 
-        <footer className="flex w-full items-center justify-between">
-          <Button onClick={previousStep} color="secondary">
-            Back
-          </Button>
-          <Button variant="contained" color="secondary" type="submit">
-            Submit
-          </Button>
-        </footer>
-      </form>
-    </div>
+          <footer className="flex w-full items-center justify-between">
+            <Button onClick={previousStep} color="secondary">
+              Back
+            </Button>
+            <Button variant="contained" color="secondary" type="submit">
+              Submit
+            </Button>
+          </footer>
+        </form>
+      </div>
+    </Step>
   )
 }

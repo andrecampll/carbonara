@@ -8,6 +8,7 @@ import { z } from 'zod'
 
 import { Input } from '../ui/input'
 import { useFootprintWizard } from './hooks/use-footprint-wizard'
+import { Step } from './step'
 
 const footprintStep1Schema = z.object({
   electrictyUsage: z.string().min(1, {
@@ -44,38 +45,45 @@ export function Step1() {
   )
 
   return (
-    <div className="flex flex-col gap-4">
-      <header>
-        <Typography variant="h5">Electricity Usage</Typography>
-        <Typography fontWeight={400}>
-          Enter your monthly electricity usage in kilowatt hours (Kwh) to
-          calculate your carbon footprint.
-        </Typography>
-      </header>
+    <Step>
+      <div className="flex flex-col gap-4">
+        <header>
+          <Typography variant="h5">Electricity Usage</Typography>
+          <Typography fontWeight={400}>
+            Enter your monthly electricity usage in kilowatt hours (Kwh) to
+            calculate your carbon footprint.
+          </Typography>
+        </header>
 
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="my-4 flex flex-col items-center gap-4"
-      >
-        <Image alt="" width={300} height={300} src="/images/electricity.webp" />
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="my-4 flex flex-col items-center gap-4"
+        >
+          <Image
+            alt=""
+            width={300}
+            height={300}
+            src="/images/electricity.webp"
+          />
 
-        <Input
-          label="Electricity Usage (Kwh/Month):"
-          type="number"
-          helperText={errors.electrictyUsage?.message}
-          color="secondary"
-          {...register('electrictyUsage')}
-        />
+          <Input
+            label="Electricity Usage (Kwh/Month):"
+            type="number"
+            helperText={errors.electrictyUsage?.message}
+            color="secondary"
+            {...register('electrictyUsage')}
+          />
 
-        <footer className="flex w-full items-center justify-between">
-          <Button onClick={previousStep} color="secondary">
-            Back
-          </Button>
-          <Button variant="contained" color="secondary" type="submit">
-            Next
-          </Button>
-        </footer>
-      </form>
-    </div>
+          <footer className="flex w-full items-center justify-between">
+            <Button onClick={previousStep} color="secondary">
+              Back
+            </Button>
+            <Button variant="contained" color="secondary" type="submit">
+              Next
+            </Button>
+          </footer>
+        </form>
+      </div>
+    </Step>
   )
 }

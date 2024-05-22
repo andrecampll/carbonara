@@ -8,6 +8,7 @@ import { z } from 'zod'
 
 import { Input } from '../ui/input'
 import { useFootprintWizard } from './hooks/use-footprint-wizard'
+import { Step } from './step'
 
 const footprintStep3Schema = z.object({
   shortFlights: z.string().min(1, {
@@ -54,52 +55,54 @@ export function Step3() {
   )
 
   return (
-    <div className="flex flex-col gap-4">
-      <header>
-        <Typography variant="h5">Airplane Flights</Typography>
-        <Typography fontWeight={400}>
-          Enter how many short, medium, and long flights you take per year to
-          calculate your carbon footprint.
-        </Typography>
-      </header>
+    <Step>
+      <div className="flex flex-col gap-4">
+        <header>
+          <Typography variant="h5">Airplane Flights</Typography>
+          <Typography fontWeight={400}>
+            Enter how many short, medium, and long flights you take per year to
+            calculate your carbon footprint.
+          </Typography>
+        </header>
 
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="my-4 flex flex-col items-center gap-4"
-      >
-        <Image alt="" width={300} height={300} src="/images/airplane.webp" />
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="my-4 flex flex-col items-center gap-4"
+        >
+          <Image alt="" width={300} height={300} src="/images/airplane.webp" />
 
-        <Input
-          label="Short Flights (4 hours):"
-          type="number"
-          helperText={errors.shortFlights?.message}
-          color="secondary"
-          {...register('shortFlights')}
-        />
-        <Input
-          label="Medium Flights (6 hours):"
-          type="number"
-          helperText={errors.mediumFlights?.message}
-          color="secondary"
-          {...register('mediumFlights')}
-        />
-        <Input
-          label="Long Flights (8 hours):"
-          type="number"
-          helperText={errors.longFlights?.message}
-          color="secondary"
-          {...register('longFlights')}
-        />
+          <Input
+            label="Short Flights (4 hours):"
+            type="number"
+            helperText={errors.shortFlights?.message}
+            color="secondary"
+            {...register('shortFlights')}
+          />
+          <Input
+            label="Medium Flights (6 hours):"
+            type="number"
+            helperText={errors.mediumFlights?.message}
+            color="secondary"
+            {...register('mediumFlights')}
+          />
+          <Input
+            label="Long Flights (8 hours):"
+            type="number"
+            helperText={errors.longFlights?.message}
+            color="secondary"
+            {...register('longFlights')}
+          />
 
-        <footer className="flex w-full items-center justify-between">
-          <Button onClick={previousStep} color="secondary">
-            Back
-          </Button>
-          <Button variant="contained" color="secondary" type="submit">
-            Next
-          </Button>
-        </footer>
-      </form>
-    </div>
+          <footer className="flex w-full items-center justify-between">
+            <Button onClick={previousStep} color="secondary">
+              Back
+            </Button>
+            <Button variant="contained" color="secondary" type="submit">
+              Next
+            </Button>
+          </footer>
+        </form>
+      </div>
+    </Step>
   )
 }

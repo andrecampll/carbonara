@@ -8,6 +8,7 @@ import { z } from 'zod'
 
 import { Input } from '../ui/input'
 import { useFootprintWizard } from './hooks/use-footprint-wizard'
+import { Step } from './step'
 
 const footprintStep2Schema = z.object({
   transportationUsage: z.string().min(1, {
@@ -43,38 +44,40 @@ export function Step2() {
   )
 
   return (
-    <div className="flex flex-col gap-4">
-      <header>
-        <Typography variant="h5">Transportation Gasoline Usage</Typography>
-        <Typography fontWeight={400}>
-          Enter your monthly transportation gasoline usage in gallons to
-          calculate your carbon footprint.
-        </Typography>
-      </header>
+    <Step>
+      <div className="flex flex-col gap-4">
+        <header>
+          <Typography variant="h5">Transportation Gasoline Usage</Typography>
+          <Typography fontWeight={400}>
+            Enter your monthly transportation gasoline usage in gallons to
+            calculate your carbon footprint.
+          </Typography>
+        </header>
 
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="my-4 flex flex-col items-center gap-4"
-      >
-        <Image alt="" width={300} height={300} src="/images/gas.png" />
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="my-4 flex flex-col items-center gap-4"
+        >
+          <Image alt="" width={300} height={300} src="/images/gas.png" />
 
-        <Input
-          label="Transportation Gasoline Usage (Gallons/Month):"
-          type="number"
-          helperText={errors.transportationUsage?.message}
-          color="secondary"
-          {...register('transportationUsage')}
-        />
+          <Input
+            label="Transportation Gasoline Usage (Gallons/Month):"
+            type="number"
+            helperText={errors.transportationUsage?.message}
+            color="secondary"
+            {...register('transportationUsage')}
+          />
 
-        <footer className="flex w-full items-center justify-between">
-          <Button onClick={previousStep} color="secondary">
-            Back
-          </Button>
-          <Button variant="contained" color="secondary" type="submit">
-            Next
-          </Button>
-        </footer>
-      </form>
-    </div>
+          <footer className="flex w-full items-center justify-between">
+            <Button onClick={previousStep} color="secondary">
+              Back
+            </Button>
+            <Button variant="contained" color="secondary" type="submit">
+              Next
+            </Button>
+          </footer>
+        </form>
+      </div>
+    </Step>
   )
 }
