@@ -5,12 +5,14 @@ import { Steps } from './steps'
 
 export function FormWizard() {
   return (
-    <Card>
-      <CardContent>
-        <WizardProvider>
-          <Steps />
-        </WizardProvider>
-      </CardContent>
-    </Card>
+    <div className="w-full">
+      <Card>
+        <CardContent>
+          <WizardProvider>
+            <Steps />
+          </WizardProvider>
+        </CardContent>
+      </Card>
+    </div>
   )
 }

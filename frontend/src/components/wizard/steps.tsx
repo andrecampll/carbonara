@@ -32,7 +32,6 @@ export function Steps() {
 
   const handleCalculateFootprint = useCallback(
     async (wizardData: CalculateFootprintMutationInput['input']) => {
-      // handle submit
       const { data: footPrintData } = await calculateFunction({
         variables: {
           input: wizardData,
