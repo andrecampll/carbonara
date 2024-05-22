@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 type CalculateInput = {
   input: {
     electricityUsageKWh: number
@@ -11,7 +12,7 @@ type CalculateInput = {
 
 export const footprintResolver = {
   Query: {
-    footprint: (_: any, { input }: any) => {
+    footprint: () => {
       return 'test'
     },
   },
@@ -27,8 +28,6 @@ export const footprintResolver = {
           flightsMediumHaul,
           flightsLongHaul,
           dietaryChoice, // Vegan, Vegetarian, Pescatarian, MeatEater
-          // recycleNewspaper, // Boolean flag for recycling newspaper
-          // recycleAluminum // Boolean flag for recycling aluminum
         } = input
 
         // Constants for emission factors and conversion factors
@@ -45,8 +44,6 @@ export const footprintResolver = {
           Pescatarian: 600, // Example factor for pescatarian diet
           MeatEater: 800, // Example factor for meat-eater diet
         }
-        //   const newspaperRecyclingFactor = 184; // Additional factor for not recycling newspaper
-        //   const aluminumRecyclingFactor = 166; // Additional factor for not recycling aluminum
 
         // Calculate CO2 emissions for electricity and transportation
         const electricityEmissions = electricityUsageKWh * electricityFactor
@@ -83,16 +80,6 @@ export const footprintResolver = {
           totalAirTravelEmissions +
           dietaryChoiceEmissions
 
-        // Add additional factors if recycling is not done
-        //   if (!recycleNewspaper) {
-        //     totalYearlyEmissions += newspaperRecyclingFactor;
-        //   }
-
-        //   if (!recycleAluminum) {
-        //     totalYearlyEmissions += aluminumRecyclingFactor;
-        //   }
-
-        // Prepare response object with units included
         const result = {
           footprint: {
             electricityEmissions: {
