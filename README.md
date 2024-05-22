@@ -4,7 +4,7 @@ Carbonara is your personal carbon footprint calculator. It's a web application t
 Curious? Check out the [live demo](https://carbonara-jet.vercel.app/)!
 
 ## Getting Started
-# Backend
+## Backend
 First, add your .env file using the .env.example as a template.
 
 Install the dependencies:
@@ -33,7 +33,7 @@ pnpm start:dev
 bun start:dev
 ```
 
-# Frontend
+## Frontend
 Install the dependencies:
 
 ```bash

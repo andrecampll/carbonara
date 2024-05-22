@@ -4,7 +4,7 @@ Carbonara is your personal carbon footprint calculator. It's a web application t
 Curious? Check out the [live demo](https://carbonara-jet.vercel.app/)!
 
 ## Getting Started
-# Backend
+## Backend
 First, add your .env file using the .env.example as a template.
 
 Install the dependencies:
@@ -57,6 +57,6 @@ We use the Apollo Server to create a GraphQL server that serves the schema, reso
 You can contribute to this project by adding new features, fixing bugs, and improving the documentation. Feel free to open a new issue or submit a pull request.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
 Made with 💜 by [andrecampll](https://github.com/andrecampll)!
