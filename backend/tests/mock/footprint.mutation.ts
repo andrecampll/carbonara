@@ -1,0 +1,2 @@
+export const footprintMutation =
+  'mutation calculate($input: CalculateInput) {calculate(input: $input) { footprint { electricityEmissions { value unit } transportationEmissions { value unit } airTravelEmissionsShortHaul { value unit } airTravelEmissionsMediumHaul { value unit } airTravelEmissionsLongHaul { value unit } dietaryChoiceEmissions { value unit } totalYearlyEmissions { value unit } yearlyElectricityEmissions { value unit } yearlyTransportationEmissions { value unit } totalAirTravelEmissions { value unit } } } }'

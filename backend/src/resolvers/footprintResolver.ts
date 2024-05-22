@@ -59,7 +59,7 @@ export const footprintResolver = {
           flightsLongHaul * airTravelFactorLongHaul
 
         // Calculate dietary choice emissions
-        const dietaryChoiceEmissions = dietaryFactors[dietaryChoice] || 0 // Default to 0 if choice not found
+        const dietaryChoiceEmissions = dietaryFactors[dietaryChoice] // Default to 0 if choice not found
 
         // Calculate total air travel emissions
         const totalAirTravelEmissions =
