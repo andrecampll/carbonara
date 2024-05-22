@@ -1,8 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Carbonara 🍝🍃
+Carbonara is your personal carbon footprint calculator. It's a web application that helps you to calculate your carbon footprint based on your consumption facts such as electricity, transportation, air travel and diet. It helps you to understand how your daily choices impact the environment and provides you with tips on how to reduce your carbon footprint.
+
+Curious? Check out the [live demo](https://carbonara-jet.vercel.app/)!
 
 ## Getting Started
+# Frontend
+Install the dependencies:
 
-First, run the development server:
+```bash
+cd frontend
+
+npm install
+# or
+yarn install
+# or
+pnpm
+# or
+bun
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +33,23 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technical Details
+Our frontend application is built with Next.js 14, Material UI, Tailwind CSS, Typescript and Apollo Client GraphQL. We divide our application folder using the app directory following the latest Next.js conventions specially for layout files and pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+App Structure:
+- `app`: Next.js application
+- `components`: reusable components
+- `hooks`: custom hooks
+- `data`: reusable types
+- `graphql`: GraphQL queries and mutations
+- `lib`: utility functions
+- `styles`: global styles and theme
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+You can contribute to this project by adding new features, fixing bugs, and improving the documentation. Feel free to open a new issue or submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Made with 💜 by [andrecampll](https://github.com/andrecampll)!

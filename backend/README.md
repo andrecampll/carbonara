@@ -33,37 +33,24 @@ pnpm start:dev
 bun start:dev
 ```
 
-# Frontend
-Install the dependencies:
-
-```bash
-cd frontend
-
-npm install
-# or
-yarn install
-# or
-pnpm
-# or
-bun
-```
-
-Then, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3333/graphql](http://localhost:3333/graphql) with your browser to see the result.
 
 ## Technical Details
-Visit the [backend](./backend/README.md) and [frontend](./frontend/README.md) README files for more more technical details about the project.
+Our backend application is built with Node.js, Express, Apollo Server, and Typescript. We divide our application folder using the src directory following the Node.js + GraphQL conventions specially for resolvers and typedefs.
+
+App Structure:
+- `src`: Node.js application
+- `src/resolvers`: GraphQL resolvers that contains the business logic for each query and mutation
+- `src/typedefs`: GraphQL type definitions that contains the schema for each query and mutation
+
+We use the Apollo Server to create a GraphQL server that serves the schema, resolvers, and context. Also, we merge our resolvers and typedefs into single files called `appResolver.ts` and `appTypeDef` thinking about the scalability of the application. Using this strategy, it would be easier to manage many resolvers and typedefs in the future.
+
+
+## Queries
+- `footprint`: Just a simple query to test the GraphQL server.
+
+## Mutations
+- `calculate`: Mutation to calculate the carbon footprint based on the user's consumption facts.
 
 ## Contributing
 
