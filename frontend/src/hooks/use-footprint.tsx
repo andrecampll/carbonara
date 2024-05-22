@@ -33,29 +33,24 @@ export function FootprintProvider({ children }: { children: React.ReactNode }) {
   const footprintChartData = useMemo(() => {
     if (!footprint) return []
 
-    const totalAirTravelEmissions =
-      (footprint.airTravelEmissionsShortHaul?.value ?? 0) +
-      (footprint.airTravelEmissionsMediumHaul?.value ?? 0) +
-      (footprint.airTravelEmissionsLongHaul?.value ?? 0)
-
     return [
       {
         id: 0,
-        value: footprint.electricityEmissions?.value ?? 0,
+        value: footprint.yearlyElectricityEmissions?.value ?? 0,
         label: 'Electricity',
-        unit: footprint.electricityEmissions?.unit,
+        unit: footprint.yearlyElectricityEmissions?.unit,
       },
       {
         id: 1,
-        value: footprint.transportationEmissions?.value ?? 0,
+        value: footprint.yearlyTransportationEmissions?.value ?? 0,
         label: 'Transportation',
-        unit: footprint.transportationEmissions?.unit,
+        unit: footprint.yearlyTransportationEmissions?.unit,
       },
       {
         id: 2,
-        value: totalAirTravelEmissions,
+        value: footprint.totalAirTravelEmissions?.value ?? 0,
         label: 'Air Travel',
-        unit: footprint.airTravelEmissionsShortHaul?.unit,
+        unit: footprint.totalAirTravelEmissions?.unit,
       },
       {
         id: 3,

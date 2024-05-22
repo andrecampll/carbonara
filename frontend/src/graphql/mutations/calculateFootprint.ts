@@ -9,23 +9,15 @@ export const CALCULATE_FOOTPRINT_MUTATION = gql`
   mutation CALCULATE_FOOTPRINT_MUTATION($input: CalculateInput!) {
     calculate(input: $input) {
       footprint {
-        electricityEmissions {
+        yearlyElectricityEmissions {
           ...EmissionFragment
         }
 
-        transportationEmissions {
+        yearlyTransportationEmissions {
           ...EmissionFragment
         }
 
-        airTravelEmissionsShortHaul {
-          ...EmissionFragment
-        }
-
-        airTravelEmissionsMediumHaul {
-          ...EmissionFragment
-        }
-
-        airTravelEmissionsLongHaul {
+        totalAirTravelEmissions {
           ...EmissionFragment
         }
 

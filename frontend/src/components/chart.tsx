@@ -6,7 +6,7 @@ import { PieChart } from '@mui/x-charts'
 import { useFootprint } from '@/hooks/use-footprint'
 
 export function Chart() {
-  const { footprintChartData } = useFootprint()
+  const { footprintChartData, footprint } = useFootprint()
 
   return footprintChartData.length > 0 ? (
     <Card>
@@ -38,11 +38,26 @@ export function Chart() {
           {footprintChartData.map((data) => (
             <li key={data.id} className="flex justify-between">
               <Typography fontWeight="600">{data.label}</Typography>
-              <Typography>
-                {data.value.toFixed(2)} <strong>{data.unit || 'kg'}</strong>
-              </Typography>
+
+              <span className="flex items-center gap-2">
+                <Typography fontSize={20}>{data.value.toFixed(2)}</Typography>
+
+                <strong>{data.unit || 'kg'}</strong>
+              </span>
             </li>
           ))}
+
+          <li className="flex justify-between">
+            <Typography fontWeight="600">Total Emissions</Typography>
+
+            <span className="flex items-center gap-2">
+              <Typography fontSize={20}>
+                {footprint?.totalYearlyEmissions?.value.toFixed(2)}
+              </Typography>
+
+              <strong>{footprint?.totalYearlyEmissions?.unit || 'kg'}</strong>
+            </span>
+          </li>
         </ul>
       </CardContent>
     </Card>

@@ -6,9 +6,12 @@ type Emission = {
 export type Footprint = {
   electricityEmissions: Emission | null
   transportationEmissions: Emission | null
+  yearlyElectricityEmissions: Emission | null
+  yearlyTransportationEmissions: Emission | null
   airTravelEmissionsShortHaul: Emission | null
   airTravelEmissionsMediumHaul: Emission | null
   airTravelEmissionsLongHaul: Emission | null
   dietaryChoiceEmissions: Emission | null
-  totalEmissions: Emission | null
+  totalYearlyEmissions: Emission | null
+  totalAirTravelEmissions: Emission | null
 }
