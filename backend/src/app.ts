@@ -31,7 +31,7 @@ async function startApolloServer(
   app.use(
     '/graphql',
     cors({
-      origin: 'http://localhost:3000',
+      origin: 'https://carbonara-jet.vercel.app',
     }),
     express.json(),
     expressMiddleware(server),
