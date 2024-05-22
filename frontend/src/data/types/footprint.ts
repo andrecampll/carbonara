@@ -15,3 +15,20 @@ export type Footprint = {
   totalYearlyEmissions: Emission | null
   totalAirTravelEmissions: Emission | null
 }
+
+export type CalculateFootprintMutationOutput = {
+  calculate: {
+    footprint: Footprint
+  }
+}
+
+export type CalculateFootprintMutationInput = {
+  input: {
+    electricityUsageKWh: number
+    transportationUsageGallonsPerMonth: number
+    flightsShortHaul: number
+    flightsMediumHaul: number
+    flightsLongHaul: number
+    dietaryChoice: string
+  }
+}

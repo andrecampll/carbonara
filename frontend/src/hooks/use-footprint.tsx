@@ -13,6 +13,7 @@ import { Footprint } from '@/data/types/footprint'
 type FootprintContextType = {
   footprint: Footprint | null
   addFootprint: (newFootprint: Footprint) => void
+  clearFootprint: () => void
   footprintChartData: {
     id: number
     value: number
@@ -28,6 +29,10 @@ export function FootprintProvider({ children }: { children: React.ReactNode }) {
 
   const addFootprint = useCallback((newFootprint: Footprint) => {
     setFootprint(newFootprint)
+  }, [])
+
+  const clearFootprint = useCallback(() => {
+    setFootprint(null)
   }, [])
 
   const footprintChartData = useMemo(() => {
@@ -67,6 +72,7 @@ export function FootprintProvider({ children }: { children: React.ReactNode }) {
         footprint,
         addFootprint,
         footprintChartData,
+        clearFootprint,
       }}
     >
       {children}

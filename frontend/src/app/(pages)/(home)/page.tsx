@@ -1,18 +1,11 @@
 import { Metadata } from 'next'
 
-import { Chart } from '@/components/chart'
-import { Form } from '@/components/form'
+import { Home } from './components/home'
 
 export const metadata: Metadata = {
   title: 'Home',
 }
 
-export default function Home() {
-  return (
-    <div className="my-6 flex w-full flex-col gap-4 lg:flex-row">
-      <Form />
-
-      <Chart />
-    </div>
-  )
+export default function HomePage() {
+  return <Home />
 }

@@ -29,17 +29,21 @@ export const SearchInput = forwardRef<HTMLDivElement, Props>(
     ]
 
     return (
-      <div>
-        <Autocomplete
-          options={dietaryChoices}
-          renderInput={(params) => (
-            <Input {...params} label={label} helperText={helperText} />
-          )}
-          onChange={(_, option) => option && onChangeValue(option.value)}
-          ref={ref}
-          isOptionEqualToValue={(option, value) => option.value === value.value}
-        />
-      </div>
+      <Autocomplete
+        options={dietaryChoices}
+        renderInput={(params) => (
+          <Input
+            {...params}
+            label={label}
+            helperText={helperText}
+            color="secondary"
+          />
+        )}
+        onChange={(_, option) => option && onChangeValue(option.value)}
+        ref={ref}
+        isOptionEqualToValue={(option, value) => option.value === value.value}
+        fullWidth
+      />
     )
   },
 )
