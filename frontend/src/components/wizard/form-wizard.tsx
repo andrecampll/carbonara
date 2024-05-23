@@ -1,6 +1,7 @@
 import { Card, CardContent } from '@mui/material'
 
-import { WizardProvider } from './hooks/use-footprint-wizard'
+import { WizardProvider } from '@/hooks/use-footprint-wizard'
+
 import { Steps } from './steps'
 
 export function FormWizard() {

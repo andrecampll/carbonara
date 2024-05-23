@@ -1,19 +1,17 @@
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Button, Typography } from '@mui/material'
 import Image from 'next/image'
 import { useCallback } from 'react'
 import { useForm } from 'react-hook-form'
-import { useWizard } from 'react-use-wizard'
 import { z } from 'zod'
 
+import { SearchInput } from '@/components/ui/search-input'
 import { CalculateFootprintMutationInput } from '@/data/types/footprint'
-
-import { SearchInput } from '../ui/search-input'
 import {
   FootprintWizard,
   useFootprintWizard,
-} from './hooks/use-footprint-wizard'
-import { Step } from './step'
+} from '@/hooks/use-footprint-wizard'
+
+import { BaseStep } from './base-step'
 
 const footprintStep4Schema = z.object({
   dietaryChoice: z.string().min(1, {
@@ -30,7 +28,6 @@ type Props = {
 }
 
 export function Step4({ onFinalSubmit }: Props) {
-  const { previousStep } = useWizard()
   const { updateWizard, wizard, clearWizard } = useFootprintWizard()
 
   const {
@@ -69,40 +66,27 @@ export function Step4({ onFinalSubmit }: Props) {
   )
 
   return (
-    <Step>
-      <div className="flex flex-col gap-4">
-        <header>
-          <Typography variant="h5">Dietary Choice</Typography>
-          <Typography fontWeight={400}>
-            Select your dietary choice to calculate your carbon footprint.
-          </Typography>
-        </header>
+    <BaseStep
+      title="Dietary Choice"
+      description="Select your dietary choice to calculate your carbon footprint."
+      nextButtonFormId="dietary-choice-form"
+    >
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="my-4 flex flex-col items-center gap-4"
+        id="dietary-choice-form"
+      >
+        <Image alt="" width={300} height={300} src="/images/meat.png" />
 
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="my-4 flex flex-col items-center gap-4"
-        >
-          <Image alt="" width={300} height={300} src="/images/meat.png" />
-
-          <SearchInput
-            label="Dietary Choice:"
-            helperText={errors.dietaryChoice?.message}
-            {...register('dietaryChoice')}
-            onChangeValue={(value) => {
-              setValue('dietaryChoice', value)
-            }}
-          />
-
-          <footer className="flex w-full items-center justify-between">
-            <Button onClick={previousStep} color="secondary">
-              Back
-            </Button>
-            <Button variant="contained" color="secondary" type="submit">
-              Submit
-            </Button>
-          </footer>
-        </form>
-      </div>
-    </Step>
+        <SearchInput
+          label="Dietary Choice:"
+          helperText={errors.dietaryChoice?.message}
+          {...register('dietaryChoice')}
+          onChangeValue={(value) => {
+            setValue('dietaryChoice', value)
+          }}
+        />
+      </form>
+    </BaseStep>
   )
 }
