@@ -1,0 +1,97 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BaseStep > should be able to render BaseStep component 1`] = `
+<div
+  style="opacity: 0; transform: translateX(800px) translateZ(0);"
+>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <header>
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+      >
+        Lets Calculate Your Carbon Footprint
+      </h5>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-3sis8q-MuiTypography-root"
+      >
+        Follow the steps to calculate your carbon footprint. We will provide
+      you with a detailed report at the end. Lets get started!
+      </p>
+    </header>
+    <div>
+      <p>
+        Hello World
+      </p>
+    </div>
+    <footer
+      class="flex w-full items-center justify-between"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-1d3f8j8-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        Back
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-zcbmsk-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="submit"
+      >
+        Next
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`BaseStep > should be able to render BaseStep component without cancel button 1`] = `
+<div
+  style="opacity: 0; transform: translateX(800px) translateZ(0);"
+>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <header>
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+      >
+        Lets Calculate Your Carbon Footprint
+      </h5>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-3sis8q-MuiTypography-root"
+      >
+        Follow the steps to calculate your carbon footprint. We will provide
+      you with a detailed report at the end. Lets get started!
+      </p>
+    </header>
+    <div>
+      <p>
+        Hello World
+      </p>
+    </div>
+    <footer
+      class="flex w-full items-center justify-end"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-zcbmsk-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="submit"
+      >
+        Next
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </footer>
+  </div>
+</div>
+`;

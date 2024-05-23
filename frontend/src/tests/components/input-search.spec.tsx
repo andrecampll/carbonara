@@ -1,7 +1,9 @@
-import { fireEvent, render, screen } from '@testing-library/react'
-import { describe, expect, test, vi } from 'vitest'
+import { cleanup, fireEvent, render, screen } from '@testing-library/react'
+import { afterEach, describe, expect, test, vi } from 'vitest'
 
 import { SearchInput } from '../../components/ui/search-input'
+
+afterEach(cleanup)
 
 describe('SearchInput', () => {
   test('it should be able to render SearchInput component', () => {

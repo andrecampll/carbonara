@@ -4,7 +4,7 @@ import { WizardProvider } from '@/hooks/use-footprint-wizard'
 
 import { Steps } from './steps'
 
-export function FormWizard() {
+export function FootprintWizard() {
   return (
     <div className="w-full">
       <Card>
