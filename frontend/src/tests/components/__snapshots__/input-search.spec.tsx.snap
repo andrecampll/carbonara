@@ -7,6 +7,14 @@ exports[`SearchInput > it should be able click and expand Search Input 1`] = `
   <div
     class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
   >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiFormLabel-filled Mui-focused MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-179z3gj-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for=":r2:"
+      id=":r2:-label"
+    >
+      Dietary Choice:
+    </label>
     <div
       class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth Mui-focused MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1wnwmuc-MuiInputBase-root-MuiOutlinedInput-root"
     >
@@ -76,12 +84,10 @@ exports[`SearchInput > it should be able click and expand Search Input 1`] = `
         class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
       >
         <legend
-          class="css-ihdtdm"
+          class="css-14lo706"
         >
-          <span
-            class="notranslate"
-          >
-            ​
+          <span>
+            Dietary Choice:
           </span>
         </legend>
       </fieldset>

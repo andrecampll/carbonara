@@ -15,13 +15,6 @@ const variants: Variants = {
     x: 0,
     opacity: 1,
   },
-  exit: (direction: number) => {
-    return {
-      zIndex: 0,
-      x: direction < 0 ? 800 : -800,
-      opacity: 0,
-    }
-  },
 }
 
 type Props = {

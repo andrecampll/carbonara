@@ -19,7 +19,11 @@ type FootprintWizardContextType = {
 
 const FootprintWizardContext = createContext({} as FootprintWizardContextType)
 
-export function WizardProvider({ children }: { children: React.ReactNode }) {
+export function FootprintWizardProvider({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   const [wizard, setWizard] = useState<FootprintWizard>({} as FootprintWizard)
 
   const updateWizard = useCallback(

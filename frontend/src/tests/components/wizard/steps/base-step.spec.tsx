@@ -1,4 +1,10 @@
-import { cleanup, render, screen } from '@testing-library/react'
+import {
+  cleanup,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from '@testing-library/react'
 import { Wizard } from 'react-use-wizard'
 import { afterEach, describe, expect, it } from 'vitest'
 
@@ -48,6 +54,28 @@ describe('BaseStep', () => {
     )
 
     expect(screen.queryByRole('button', { name: /back/i })).toBeNull()
+    expect(container.firstChild).toMatchSnapshot()
+  })
+
+  it('should be able to render Base component and go back', async () => {
+    const { container } = render(
+      <Wizard>
+        <BaseStep title="BaseStep title" description="BaseStep description">
+          <div>BaseStep test</div>
+        </BaseStep>
+      </Wizard>,
+    )
+
+    const backButton = screen.getByRole('button', { name: /back/i })
+
+    fireEvent.click(backButton)
+
+    await waitFor(
+      () => {
+        expect(screen.getByText(/BaseStep test/i)).toBeDefined()
+      },
+      { timeout: 1000 },
+    )
     expect(container.firstChild).toMatchSnapshot()
   })
 })

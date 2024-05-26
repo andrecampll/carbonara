@@ -20,20 +20,21 @@ describe('SearchInput', () => {
   test('it should be able click and expand Search Input', () => {
     const onChangeValue = vi.fn()
 
-    const { container } = render(<SearchInput onChangeValue={onChangeValue} />)
+    const { container } = render(
+      <SearchInput onChangeValue={onChangeValue} label="Dietary Choice:" />,
+    )
+    const input = screen.getByRole<HTMLInputElement>('combobox', {
+      name: 'Dietary Choice:',
+    })
 
     fireEvent.click(
       screen.getAllByRole('button', {
         name: /open/i,
       })[0],
     )
+    fireEvent.click(screen.getByText('Vegan')) // select option
 
-    const option = screen.getByText(/vegan/i)
-
-    expect(option).toBeDefined()
-
-    fireEvent.click(option)
-
+    expect(input.value).toBe('Vegan')
     expect(container.firstChild).toMatchSnapshot()
   })
 })

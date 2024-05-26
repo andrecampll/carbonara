@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Steps > should be able to render Step0 component 1`] = `
+exports[`Steps0 > should be able to render Step0 component 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -25,13 +25,8 @@ exports[`Steps > should be able to render Step0 component 1`] = `
     >
       <img
         alt=""
-        data-nimg="1"
-        decoding="async"
         height="200"
-        loading="lazy"
-        src="/_next/image?url=%2Fimages%2Fcarbon-light.webp&w=640&q=75"
-        srcset="/_next/image?url=%2Fimages%2Fcarbon-light.webp&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fcarbon-light.webp&w=640&q=75 2x"
-        style="color: transparent;"
+        src="/images/carbon-light.webp"
         width="200"
       />
     </div>
@@ -39,7 +34,7 @@ exports[`Steps > should be able to render Step0 component 1`] = `
       class="flex w-full items-center justify-end"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-zcbmsk-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-f76bo7-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="submit"
       >
@@ -53,7 +48,7 @@ exports[`Steps > should be able to render Step0 component 1`] = `
 </div>
 `;
 
-exports[`Steps > should be able to render Step1 component 1`] = `
+exports[`Steps1 > should be able to render Step1 component 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -79,20 +74,15 @@ exports[`Steps > should be able to render Step1 component 1`] = `
     >
       <img
         alt=""
-        data-nimg="1"
-        decoding="async"
         height="300"
-        loading="lazy"
-        src="/_next/image?url=%2Fimages%2Felectricity.webp&w=640&q=75"
-        srcset="/_next/image?url=%2Fimages%2Felectricity.webp&w=384&q=75 1x, /_next/image?url=%2Fimages%2Felectricity.webp&w=640&q=75 2x"
-        style="color: transparent;"
+        src="/images/electricity.webp"
         width="300"
       />
       <div
         class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1v4qvbo-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-hfiqmb-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
           for=":r0:"
           id=":r0:-label"
@@ -100,7 +90,7 @@ exports[`Steps > should be able to render Step1 component 1`] = `
           Electricity Usage (Kwh/Month):
         </label>
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-1j0w0ul-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-j9jgxi-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <input
             aria-invalid="false"
@@ -129,7 +119,7 @@ exports[`Steps > should be able to render Step1 component 1`] = `
       class="flex w-full items-center justify-between"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-1d3f8j8-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-13q5ars-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
@@ -139,7 +129,7 @@ exports[`Steps > should be able to render Step1 component 1`] = `
         />
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-zcbmsk-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-f76bo7-MuiButtonBase-root-MuiButton-root"
         form="electricity-usage-form"
         tabindex="0"
         type="submit"
@@ -154,7 +144,103 @@ exports[`Steps > should be able to render Step1 component 1`] = `
 </div>
 `;
 
-exports[`Steps > should be able to render Step2 component 1`] = `
+exports[`Steps1 > should be able to submit step 1 1`] = `
+<div
+  style="opacity: 0; transform: translateX(800px) translateZ(0);"
+>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <header>
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+      >
+        Electricity Usage
+      </h5>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-3sis8q-MuiTypography-root"
+      >
+        Enter your monthly electricity usage in kilowatt hours (Kwh) to
+      calculate your carbon footprint.
+      </p>
+    </header>
+    <form
+      class="my-4 flex flex-col items-center gap-4"
+      id="electricity-usage-form"
+    >
+      <img
+        alt=""
+        height="300"
+        src="/images/electricity.webp"
+        width="300"
+      />
+      <div
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-72d765-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for=":r1:"
+          id=":r1:-label"
+        >
+          Electricity Usage (Kwh/Month):
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-j9jgxi-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+            id=":r1:"
+            name="electrictyUsage"
+            type="number"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-14lo706"
+            >
+              <span>
+                Electricity Usage (Kwh/Month):
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+    <footer
+      class="flex w-full items-center justify-between"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-13q5ars-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        Back
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-f76bo7-MuiButtonBase-root-MuiButton-root"
+        form="electricity-usage-form"
+        tabindex="0"
+        type="submit"
+      >
+        Next
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Steps2 > should be able to render Step2 component 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -180,33 +266,28 @@ exports[`Steps > should be able to render Step2 component 1`] = `
     >
       <img
         alt=""
-        data-nimg="1"
-        decoding="async"
         height="300"
-        loading="lazy"
-        src="/_next/image?url=%2Fimages%2Fgas.png&w=640&q=75"
-        srcset="/_next/image?url=%2Fimages%2Fgas.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fgas.png&w=640&q=75 2x"
-        style="color: transparent;"
+        src="/images/gas.png"
         width="300"
       />
       <div
         class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1v4qvbo-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-hfiqmb-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r1:"
-          id=":r1:-label"
+          for=":r2:"
+          id=":r2:-label"
         >
           Transportation Gasoline Usage (Gallons/Month):
         </label>
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-1j0w0ul-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-j9jgxi-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r1:"
+            id=":r2:"
             name="transportationUsage"
             type="number"
             value=""
@@ -230,7 +311,7 @@ exports[`Steps > should be able to render Step2 component 1`] = `
       class="flex w-full items-center justify-between"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-1d3f8j8-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-13q5ars-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
@@ -240,7 +321,7 @@ exports[`Steps > should be able to render Step2 component 1`] = `
         />
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-zcbmsk-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-f76bo7-MuiButtonBase-root-MuiButton-root"
         form="transportation-usage-form"
         tabindex="0"
         type="submit"
@@ -255,7 +336,103 @@ exports[`Steps > should be able to render Step2 component 1`] = `
 </div>
 `;
 
-exports[`Steps > should be able to render Step3 component 1`] = `
+exports[`Steps2 > should be able to submit step 2 1`] = `
+<div
+  style="opacity: 0; transform: translateX(800px) translateZ(0);"
+>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <header>
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+      >
+        Transportation Gasoline Usage
+      </h5>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-3sis8q-MuiTypography-root"
+      >
+        Enter your monthly transportation gasoline usage in gallons to
+      calculate your carbon footprint.
+      </p>
+    </header>
+    <form
+      class="my-4 flex flex-col items-center gap-4"
+      id="transportation-usage-form"
+    >
+      <img
+        alt=""
+        height="300"
+        src="/images/gas.png"
+        width="300"
+      />
+      <div
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-72d765-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for=":r3:"
+          id=":r3:-label"
+        >
+          Transportation Gasoline Usage (Gallons/Month):
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-j9jgxi-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+            id=":r3:"
+            name="transportationUsage"
+            type="number"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-14lo706"
+            >
+              <span>
+                Transportation Gasoline Usage (Gallons/Month):
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+    <footer
+      class="flex w-full items-center justify-between"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-13q5ars-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        Back
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-f76bo7-MuiButtonBase-root-MuiButton-root"
+        form="transportation-usage-form"
+        tabindex="0"
+        type="submit"
+      >
+        Next
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Steps3 > should be able to render Step3 component 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -281,33 +458,28 @@ exports[`Steps > should be able to render Step3 component 1`] = `
     >
       <img
         alt=""
-        data-nimg="1"
-        decoding="async"
         height="300"
-        loading="lazy"
-        src="/_next/image?url=%2Fimages%2Fairplane.webp&w=640&q=75"
-        srcset="/_next/image?url=%2Fimages%2Fairplane.webp&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fairplane.webp&w=640&q=75 2x"
-        style="color: transparent;"
+        src="/images/airplane.webp"
         width="300"
       />
       <div
         class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1v4qvbo-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-hfiqmb-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r2:"
-          id=":r2:-label"
+          for=":r4:"
+          id=":r4:-label"
         >
           Short Flights (4 hours):
         </label>
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-1j0w0ul-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-j9jgxi-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r2:"
+            id=":r4:"
             name="shortFlights"
             type="number"
             value=""
@@ -330,20 +502,20 @@ exports[`Steps > should be able to render Step3 component 1`] = `
         class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1v4qvbo-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-hfiqmb-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r3:"
-          id=":r3:-label"
+          for=":r5:"
+          id=":r5:-label"
         >
           Medium Flights (6 hours):
         </label>
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-1j0w0ul-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-j9jgxi-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r3:"
+            id=":r5:"
             name="mediumFlights"
             type="number"
             value=""
@@ -366,20 +538,20 @@ exports[`Steps > should be able to render Step3 component 1`] = `
         class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1v4qvbo-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-hfiqmb-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r4:"
-          id=":r4:-label"
+          for=":r6:"
+          id=":r6:-label"
         >
           Long Flights (8 hours):
         </label>
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-1j0w0ul-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-j9jgxi-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r4:"
+            id=":r6:"
             name="longFlights"
             type="number"
             value=""
@@ -403,7 +575,7 @@ exports[`Steps > should be able to render Step3 component 1`] = `
       class="flex w-full items-center justify-between"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-1d3f8j8-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-13q5ars-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
@@ -413,7 +585,7 @@ exports[`Steps > should be able to render Step3 component 1`] = `
         />
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-zcbmsk-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-f76bo7-MuiButtonBase-root-MuiButton-root"
         form="airplane-flights-form"
         tabindex="0"
         type="submit"
@@ -428,7 +600,175 @@ exports[`Steps > should be able to render Step3 component 1`] = `
 </div>
 `;
 
-exports[`Steps > should be able to render Step4 component 1`] = `
+exports[`Steps3 > should be able to submit step 3 1`] = `
+<div
+  style="opacity: 0; transform: translateX(800px) translateZ(0);"
+>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <header>
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+      >
+        Airplane Flights
+      </h5>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-3sis8q-MuiTypography-root"
+      >
+        Enter how many short, medium, and long flights you take per year to
+      calculate your carbon footprint.
+      </p>
+    </header>
+    <form
+      class="my-4 flex flex-col items-center gap-4"
+      id="airplane-flights-form"
+    >
+      <img
+        alt=""
+        height="300"
+        src="/images/airplane.webp"
+        width="300"
+      />
+      <div
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-72d765-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for=":r7:"
+          id=":r7:-label"
+        >
+          Short Flights (4 hours):
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-j9jgxi-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+            id=":r7:"
+            name="shortFlights"
+            type="number"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-14lo706"
+            >
+              <span>
+                Short Flights (4 hours):
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-72d765-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for=":r8:"
+          id=":r8:-label"
+        >
+          Medium Flights (6 hours):
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-j9jgxi-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+            id=":r8:"
+            name="mediumFlights"
+            type="number"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-14lo706"
+            >
+              <span>
+                Medium Flights (6 hours):
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-72d765-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for=":r9:"
+          id=":r9:-label"
+        >
+          Long Flights (8 hours):
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl css-j9jgxi-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+            id=":r9:"
+            name="longFlights"
+            type="number"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-14lo706"
+            >
+              <span>
+                Long Flights (8 hours):
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </form>
+    <footer
+      class="flex w-full items-center justify-between"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-13q5ars-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        Back
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-f76bo7-MuiButtonBase-root-MuiButton-root"
+        form="airplane-flights-form"
+        tabindex="0"
+        type="submit"
+      >
+        Next
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Steps4 > should be able to render Step4 component 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -453,13 +793,8 @@ exports[`Steps > should be able to render Step4 component 1`] = `
     >
       <img
         alt=""
-        data-nimg="1"
-        decoding="async"
         height="300"
-        loading="lazy"
-        src="/_next/image?url=%2Fimages%2Fmeat.png&w=640&q=75"
-        srcset="/_next/image?url=%2Fimages%2Fmeat.png&w=384&q=75 1x, /_next/image?url=%2Fimages%2Fmeat.png&w=640&q=75 2x"
-        style="color: transparent;"
+        src="/images/meat.png"
         width="300"
       />
       <div
@@ -469,15 +804,15 @@ exports[`Steps > should be able to render Step4 component 1`] = `
           class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1v4qvbo-MuiFormLabel-root-MuiInputLabel-root"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-hfiqmb-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":r5:"
-            id=":r5:-label"
+            for=":ra:"
+            id=":ra:-label"
           >
             Dietary Choice:
           </label>
           <div
-            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1wnwmuc-MuiInputBase-root-MuiOutlinedInput-root"
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-15uij66-MuiInputBase-root-MuiOutlinedInput-root"
           >
             <input
               aria-autocomplete="list"
@@ -486,7 +821,7 @@ exports[`Steps > should be able to render Step4 component 1`] = `
               autocapitalize="none"
               autocomplete="off"
               class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-nxo287-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r5:"
+              id=":ra:"
               role="combobox"
               spellcheck="false"
               type="text"
@@ -538,7 +873,7 @@ exports[`Steps > should be able to render Step4 component 1`] = `
       class="flex w-full items-center justify-between"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-1d3f8j8-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-13q5ars-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
@@ -548,7 +883,159 @@ exports[`Steps > should be able to render Step4 component 1`] = `
         />
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-zcbmsk-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-f76bo7-MuiButtonBase-root-MuiButton-root"
+        form="dietary-choice-form"
+        tabindex="0"
+        type="submit"
+      >
+        Next
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Steps4 > should be able to submit step 4 1`] = `
+<div
+  style="opacity: 0; transform: translateX(800px) translateZ(0);"
+>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <header>
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+      >
+        Dietary Choice
+      </h5>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-3sis8q-MuiTypography-root"
+      >
+        Select your dietary choice to calculate your carbon footprint.
+      </p>
+    </header>
+    <form
+      class="my-4 flex flex-col items-center gap-4"
+      id="dietary-choice-form"
+    >
+      <img
+        alt=""
+        height="300"
+        src="/images/meat.png"
+        width="300"
+      />
+      <div
+        class="MuiAutocomplete-root Mui-focused MuiAutocomplete-fullWidth MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon css-5r88sx-MuiAutocomplete-root"
+      >
+        <div
+          class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiFormLabel-filled Mui-focused MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-72d765-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="true"
+            for=":rc:"
+            id=":rc:-label"
+          >
+            Dietary Choice:
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-fullWidth Mui-focused MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-15uij66-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-invalid="false"
+              autocapitalize="none"
+              autocomplete="off"
+              class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-nxo287-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":rc:"
+              role="combobox"
+              spellcheck="false"
+              type="text"
+              value="Vegan"
+            />
+            <div
+              class="MuiAutocomplete-endAdornment css-p1olib-MuiAutocomplete-endAdornment"
+            >
+              <button
+                aria-label="Clear"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-clearIndicator css-1glvl0p-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator"
+                tabindex="-1"
+                title="Clear"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+                  data-testid="CloseIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="Open"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-qzbt6i-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+                tabindex="-1"
+                title="Open"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="ArrowDropDownIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 10l5 5 5-5z"
+                  />
+                </svg>
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-14lo706"
+              >
+                <span>
+                  Dietary Choice:
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </form>
+    <footer
+      class="flex w-full items-center justify-between"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorSecondary css-13q5ars-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        Back
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-f76bo7-MuiButtonBase-root-MuiButton-root"
         form="dietary-choice-form"
         tabindex="0"
         type="submit"
