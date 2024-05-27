@@ -20,7 +20,7 @@ vitest.mock('next/image', () => ({
   },
 }))
 
-describe('Steps0', () => {
+describe('Step0', () => {
   it('should be able to render Step0 component', () => {
     const { container } = render(
       <Wizard>
@@ -35,7 +35,7 @@ describe('Steps0', () => {
   })
 })
 
-describe('Steps1', () => {
+describe('Step1', () => {
   it('should be able to render Step1 component', () => {
     const { container } = render(
       <Wizard>
@@ -65,7 +65,7 @@ describe('Steps1', () => {
   })
 })
 
-describe('Steps2', () => {
+describe('Step2', () => {
   it('should be able to render Step2 component', () => {
     const { container } = render(
       <Wizard>
@@ -97,7 +97,7 @@ describe('Steps2', () => {
   })
 })
 
-describe('Steps3', () => {
+describe('Step3', () => {
   it('should be able to render Step3 component', () => {
     const { container } = render(
       <Wizard>
@@ -142,7 +142,7 @@ describe('Steps3', () => {
   })
 })
 
-describe('Steps4', () => {
+describe('Step4', () => {
   it('should be able to render Step4 component', () => {
     const { container } = render(
       <Wizard>

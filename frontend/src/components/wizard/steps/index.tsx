@@ -6,11 +6,15 @@ import { Wizard } from 'react-use-wizard'
 
 type Props = {
   children: ReactNode
+  startIndex?: number
 }
 
-export function Steps({ children }: Props) {
+export function Steps({ children, startIndex }: Props) {
   return (
-    <Wizard wrapper={<AnimatePresence initial={false} mode="wait" />}>
+    <Wizard
+      startIndex={startIndex}
+      wrapper={<AnimatePresence initial={false} mode="wait" />}
+    >
       {children}
     </Wizard>
   )

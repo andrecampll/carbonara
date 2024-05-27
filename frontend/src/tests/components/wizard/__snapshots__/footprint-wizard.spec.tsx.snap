@@ -1,0 +1,61 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FootprintWizard > should be able to render FootprintWizard component 1`] = `
+<div
+  class="w-full"
+>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+  >
+    <div
+      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+    >
+      <div
+        style="z-index: 1; opacity: 1; transform: none;"
+      >
+        <div
+          class="flex flex-col gap-4"
+        >
+          <header>
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+            >
+              Lets Calculate Your Carbon Footprint
+            </h5>
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-3sis8q-MuiTypography-root"
+            >
+              Follow the steps to calculate your carbon footprint. We will provide
+      you with a detailed report at the end. Lets get started!
+            </p>
+          </header>
+          <div
+            class="my-4 flex flex-col items-center gap-4"
+          >
+            <img
+              alt=""
+              height="200"
+              src="/images/carbon-light.webp"
+              width="200"
+            />
+          </div>
+          <footer
+            class="flex w-full items-center justify-end"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSecondary css-f76bo7-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="submit"
+            >
+              Next
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

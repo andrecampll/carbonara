@@ -10,7 +10,7 @@ import {
 
 import { Footprint } from '@/data/types/footprint'
 
-type FootprintContextType = {
+export type FootprintContextType = {
   footprint: Footprint | null
   addFootprint: (newFootprint: Footprint) => void
   clearFootprint: () => void

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Steps0 > should be able to render Step0 component 1`] = `
+exports[`Step0 > should be able to render Step0 component 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -48,7 +48,7 @@ exports[`Steps0 > should be able to render Step0 component 1`] = `
 </div>
 `;
 
-exports[`Steps1 > should be able to render Step1 component 1`] = `
+exports[`Step1 > should be able to render Step1 component 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -144,7 +144,7 @@ exports[`Steps1 > should be able to render Step1 component 1`] = `
 </div>
 `;
 
-exports[`Steps1 > should be able to submit step 1 1`] = `
+exports[`Step1 > should be able to submit step 1 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -240,7 +240,7 @@ exports[`Steps1 > should be able to submit step 1 1`] = `
 </div>
 `;
 
-exports[`Steps2 > should be able to render Step2 component 1`] = `
+exports[`Step2 > should be able to render Step2 component 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -336,7 +336,7 @@ exports[`Steps2 > should be able to render Step2 component 1`] = `
 </div>
 `;
 
-exports[`Steps2 > should be able to submit step 2 1`] = `
+exports[`Step2 > should be able to submit step 2 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -432,7 +432,7 @@ exports[`Steps2 > should be able to submit step 2 1`] = `
 </div>
 `;
 
-exports[`Steps3 > should be able to render Step3 component 1`] = `
+exports[`Step3 > should be able to render Step3 component 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -600,7 +600,7 @@ exports[`Steps3 > should be able to render Step3 component 1`] = `
 </div>
 `;
 
-exports[`Steps3 > should be able to submit step 3 1`] = `
+exports[`Step3 > should be able to submit step 3 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -768,7 +768,7 @@ exports[`Steps3 > should be able to submit step 3 1`] = `
 </div>
 `;
 
-exports[`Steps4 > should be able to render Step4 component 1`] = `
+exports[`Step4 > should be able to render Step4 component 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >
@@ -898,7 +898,7 @@ exports[`Steps4 > should be able to render Step4 component 1`] = `
 </div>
 `;
 
-exports[`Steps4 > should be able to submit step 4 1`] = `
+exports[`Step4 > should be able to submit step 4 1`] = `
 <div
   style="opacity: 0; transform: translateX(800px) translateZ(0);"
 >

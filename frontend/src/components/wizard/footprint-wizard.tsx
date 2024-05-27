@@ -23,7 +23,11 @@ type CalculateFootprintMutationResponse = {
   }
 }
 
-export function FootprintWizard() {
+type Props = {
+  startIndex?: number
+}
+
+export function FootprintWizard({ startIndex }: Props) {
   const { addFootprint } = useFootprint()
 
   const [calculateFunction] = useMutation<CalculateFootprintMutationResponse>(
@@ -48,7 +52,7 @@ export function FootprintWizard() {
       <Card>
         <CardContent>
           <FootprintWizardProvider>
-            <Steps>
+            <Steps startIndex={startIndex}>
               <Step0 />
               <Step1 />
               <Step2 />

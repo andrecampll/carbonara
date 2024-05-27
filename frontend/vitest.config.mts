@@ -8,7 +8,21 @@ export default defineConfig({
     environment: 'jsdom',
     coverage: {
       provider: 'istanbul',
+      exclude: [
+        '**/src/lib/**',
+        '**/node_modules/**',
+        '**/.next/**',
+        '**/.{idea,git,cache,output,temp}/**',
+        '**/src/lib/**',
+        '**.config.{mjs,ts}',
+        '**/src/env.ts',
+      ],
     },
+    exclude: [
+      '**/node_modules/**',
+      '**/.next/**',
+      '**/.{idea,git,cache,output,temp}/**',
+    ],
   },
   resolve: {
     alias: [{ find: '@', replacement: resolve(__dirname, './src') }],
