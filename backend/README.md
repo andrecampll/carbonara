@@ -43,14 +43,28 @@ App Structure:
 - `src/resolvers`: GraphQL resolvers that contains the business logic for each query and mutation
 - `src/typedefs`: GraphQL type definitions that contains the schema for each query and mutation
 
-We use the Apollo Server to create a GraphQL server that serves the schema, resolvers, and context. Also, we merge our resolvers and typedefs into single files called `appResolver.ts` and `appTypeDef` thinking about the scalability of the application. Using this strategy, it would be easier to manage many resolvers and typedefs in the future.
-
+We use the Apollo Server to create a GraphQL server that serves the schema, resolvers, and context. Also, we merge our resolvers and typedefs into single files called `appResolver.ts` and `appTypeDef` thinking about the scalability of the application. Using this strategy, it would be easier to manage many resolvers and typedefs in the future. We also developed some automated tests using Vitest to test the resolvers and the server.
 
 ## Queries
 - `footprint`: Just a simple query to test the GraphQL server.
 
 ## Mutations
 - `calculate`: Mutation to calculate the carbon footprint based on the user's consumption facts.
+
+## Tests
+We use Vitest to test the resolvers and the server. To run the tests, you can use the following command:
+
+```bash
+npm run test
+# or
+yarn test
+# or
+pnpm test
+# or
+bun test
+```
+
+We also have the command `test:coverage` to generate the coverage report.
 
 ## Contributing
 
