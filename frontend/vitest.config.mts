@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react'
+import { config } from 'dotenv'
 import { resolve } from 'path'
 import { defineConfig } from 'vitest/config'
 
@@ -24,6 +25,9 @@ export default defineConfig({
       '**/.{idea,git,cache,output,temp}/**',
     ],
     setupFiles: [resolve(__dirname, 'src/utils/tests/setup.ts')],
+    env: {
+      ...config({ path: '.env.development' }).parsed,
+    },
   },
   resolve: {
     alias: [{ find: '@', replacement: resolve(__dirname, './src') }],
