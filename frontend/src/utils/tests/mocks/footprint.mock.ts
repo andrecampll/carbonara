@@ -42,3 +42,29 @@ export const footprint: Footprint = {
     unit: 'kgCO2e/year',
   },
 }
+
+export const footprintChartData = [
+  {
+    id: 0,
+    value: 300,
+    label: 'Electricity',
+    unit: 'kgCO2e/year',
+  },
+  {
+    id: 1,
+    value: 1000,
+    label: 'Transportation',
+    unit: 'kgCO2e/year',
+  },
+  {
+    id: 2,
+    value: 200,
+    label: 'Air Travel',
+  },
+  {
+    id: 3,
+    value: 900,
+    label: 'Dietary Choice',
+    unit: 'kgCO2e/year',
+  },
+]

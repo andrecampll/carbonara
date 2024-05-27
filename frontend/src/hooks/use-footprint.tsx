@@ -18,11 +18,20 @@ export type FootprintContextType = {
     id: number
     value: number
     label: string
-    unit?: string
+    unit?: string | null
   }[]
 }
 
-const FootprintContext = createContext({} as FootprintContextType)
+export const FootprintContextDefaultValues = {
+  footprint: null,
+  addFootprint: () => null,
+  clearFootprint: () => null,
+  footprintChartData: [],
+}
+
+export const FootprintContext = createContext<FootprintContextType>(
+  FootprintContextDefaultValues,
+)
 
 export function FootprintProvider({ children }: { children: React.ReactNode }) {
   const [footprint, setFootprint] = useState<Footprint | null>(null)

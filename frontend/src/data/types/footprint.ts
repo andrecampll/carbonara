@@ -1,6 +1,6 @@
 type Emission = {
   value: number
-  unit: string
+  unit?: string | null
 }
 
 export type Footprint = {

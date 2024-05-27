@@ -13,7 +13,7 @@ export default defineConfig({
         '**/node_modules/**',
         '**/.next/**',
         '**/.{idea,git,cache,output,temp}/**',
-        '**/src/lib/**',
+        '**/src/styles/**',
         '**.config.{mjs,ts}',
         '**/src/env.ts',
       ],
@@ -23,6 +23,7 @@ export default defineConfig({
       '**/.next/**',
       '**/.{idea,git,cache,output,temp}/**',
     ],
+    setupFiles: [resolve(__dirname, 'src/utils/tests/setup.ts')],
   },
   resolve: {
     alias: [{ find: '@', replacement: resolve(__dirname, './src') }],

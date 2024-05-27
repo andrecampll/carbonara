@@ -1,10 +1,10 @@
 import { MockedProvider } from '@apollo/client/testing'
-import { cleanup, fireEvent, screen, waitFor } from '@testing-library/react'
+import { cleanup, screen } from '@testing-library/react'
 import { HTMLAttributes } from 'react'
 import { afterEach, describe, expect, it, vitest } from 'vitest'
 
 import { FootprintWizard } from '@/components/wizard/footprint-wizard'
-import { CALCULATE_FOOTPRINT_MUTATION } from '@/graphql/mutations/calculateFootprint'
+// import { CALCULATE_FOOTPRINT_MUTATION } from '@/graphql/mutations/calculateFootprint'
 import { render } from '@/utils/tests/render'
 
 vitest.mock('next/image', () => ({

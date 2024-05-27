@@ -2,21 +2,30 @@ import { ThemeProvider } from '@mui/material'
 import { render, RenderOptions } from '@testing-library/react'
 import { ReactElement } from 'react'
 
-import { FootprintProvider } from '../../hooks/use-footprint'
+import {
+  FootprintContext,
+  FootprintContextDefaultValues,
+  FootprintContextType,
+} from '../../hooks/use-footprint'
 import { FootprintWizardProvider } from '../../hooks/use-footprint-wizard'
 import { theme } from '../../styles/theme'
 
-type CustomRenderProps = RenderOptions
+type CustomRenderProps = {
+  footprintProviderProps?: FootprintContextType
+} & RenderOptions
 
 const customRender = (
   ui: ReactElement,
-  { ...renderOptions }: CustomRenderProps = {},
+  {
+    footprintProviderProps = FootprintContextDefaultValues,
+    ...renderOptions
+  }: CustomRenderProps = {},
 ) =>
   render(
     <ThemeProvider theme={theme}>
-      <FootprintProvider>
+      <FootprintContext.Provider value={footprintProviderProps}>
         <FootprintWizardProvider>{ui}</FootprintWizardProvider>
-      </FootprintProvider>
+      </FootprintContext.Provider>
     </ThemeProvider>,
     renderOptions,
   )
